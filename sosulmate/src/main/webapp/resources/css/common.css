@@ -1,0 +1,351 @@
+/* 구글웹폰트 */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap') ;
+
+/* 공통 사항 */
+* {
+	box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, ul, p{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 16px;
+	color: #2f3138;
+}
+
+input, button, textarea {
+	outline: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+a{
+	text-decoration: none;
+	color: #000000;
+}
+
+li{
+	list-style: none;
+}
+
+/*배경 색상*/
+.bg-color1{
+	/*대표 색상*/
+	background-color: #e50020;
+}
+/*배경 + 버튼 색상*/
+.bg-color2{
+	background-color: #3a3a3a;
+}
+.btn-color2{
+	background-color: #656464;
+}
+/*버튼 + 테두리색상*/
+.btn-color3{
+	background-color: #e0e0e0;
+}
+.line-color3{
+	background-color: #d1d5d9;
+}
+/*버튼색상*/
+.btn-color4{
+	background-color: #9e9e9e;
+}
+.btn-color5{
+	background-color: #7d8e9e;
+}
+.btn-color6{
+	background-color: #333333;
+}
+
+/*작은 버튼*/
+.smallBtn_red{
+	padding: 5px 10px;	
+	border-radius: 6px;
+	border: 1px solid #e50020;
+	background-color: #e50020;
+	color: white;
+	font-size: 13px;
+}
+.smallBtn_white{
+	padding: 5px 10px;	
+	border-radius: 6px;
+	border: 1px solid #e50020;
+	background-color: white;
+	color: #e50020;
+	font-size: 13px;
+}
+.smallBtn_grey{
+	padding: 5px 10px;	
+	border-radius: 6px;
+	border: 1px solid #d1d5d9;
+	background-color: white;
+	color: #333333;
+	font-size: 13px;
+}
+
+/*중간 버튼*/
+.middleBtn_red{
+	width: 180px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #e50020;
+    color: white;
+    font-size: 18px;
+    margin: -5px 0px 13px 0px;
+
+}
+.middleBtn_white{
+    width: 180px;
+    height: 50px;
+    border: 1px solid #e50020;
+    border-radius: 5px;
+    background-color: white;
+    color: #e50020;
+    font-size: 18px;
+    margin: -5px 0px 13px 0px;
+}
+.middleBtn_grey{
+    width: 180px;
+    height: 50px;
+    border: 1px solid #d1d5d9;
+    border-radius: 5px;
+    background-color: white;
+    color: #333333;
+    font-size: 18px;
+    margin: -5px 0px 13px 0px;
+}
+
+/*큰 버튼*/
+.largeBtn_red{
+	border: 1px solid #e50020;
+	width: 387px;
+	height: 50px;
+	background-color: #e50020;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	border-radius: 5px;
+}
+.largeBtn_white{
+	border: 1px solid #e50020;
+	width: 387px;
+	height: 50px;
+	background-color: white;
+	color: #e50020;
+	font-size: 18px;
+	text-align: center;
+	border-radius: 5px;
+}
+.largeBtn_grey{
+	border: 1px solid #d1d5d9;
+	width: 387px;
+	height: 50px;
+	background-color: #d1d5d9;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+
+/*버튼 hover*/
+.smallBtn_red:hover, .middleBtn_red:hover, .largeBtn_red:hover{
+	background-color: #be001b;
+	border-color: #be001b;
+	color: white;
+}
+.smallBtn_white:hover, .middleBtn_white:hover, .largeBtn_white:hover{
+	background-color: white;
+	border-color: #be001b; 
+	color: #be001b;
+}
+.smallBtn_grey:hover, .middleBtn_grey:hover{
+	background-color: #fff;
+	border-color: #333333; 
+}
+.largeBtn_grey:hover{
+	background-color: #9e9e9e;
+	border-color: #9e9e9e; 
+}
+
+/*입력창*/
+input.smallInput{
+	padding: 10px 10px 10px 15px;	
+	border: 1px solid #d1d5d9;
+	border-radius: 3px;
+	width: 200px;
+}
+input.largeInput{
+	padding: 10px 10px 10px 15px;	
+	border: 1px solid #d1d5d9;
+	border-radius: 3px;
+	width: 610px;
+}
+
+/*에러메세지 */
+.errorMessage{
+	display: none;
+	color: red;
+	font-size: 12px;
+	padding-left: 10px;
+}
+
+/*검색창*/
+/*
+	<div class="smallSearch">
+		<i class="fas fa-search"></i>
+   		<input type="text" name="" placeholder="검색">
+	</div>
+*/
+.smallSearch, .largeSearch{
+    position: relative;
+}
+.smallSearch > i{
+	position: absolute;
+    left: 12px;
+    top: 8px;
+    color: #656464;
+}
+.smallSearch > input{
+	border: 1px solid #d1d5d9;
+    border-radius: 6px;
+    color: #888;
+    font-size: 13px;
+    width: 230px;
+    height: 30px;
+    padding-left: 40px;
+    padding-right: 20px;
+    outline: none;
+}
+
+.largeSearch > i{
+    position: absolute;
+    left: 14px;
+    top: 12px;
+    color: #656464;
+}
+
+.largeSearch > input{
+	border: 1px solid #d1d5d9;
+    border-radius: 6px;
+    color: #888;
+    font-size: 15px;
+    width: 610px;
+    height: 40px;
+    padding-left: 40px;
+    padding-right: 20px;
+    outline: none;
+}
+
+/*신고, 좋아요 등 기능 버튼*/
+.actionBtn_grey {
+	display: inline-block;
+	border: 1px solid #666;
+	color: #666;
+	border-radius: 10px;
+	padding: 2px 7px;
+	margin: 2px;
+	font-size: 11px;
+	cursor: pointer;
+}
+.actionBtn_red {
+	display: inline-block;
+	border: 1px solid #e50020;
+	color: white;
+	background-color: #e50020;
+	border-radius: 10px;
+	padding: 2px 7px;
+	margin: 2px;
+	font-size: 11px;
+	cursor: pointer;
+
+}
+
+/*상단 메뉴*/
+/*
+<div class="topmenu_wrap">
+	<div class="topmenu_Bar">
+		<div class="topmenu_contain">
+			<ul>
+				<li><a href="">자유</a></li>
+				<li><a href="">후기</a></li>
+				<li><a href="">작품공지</a></li>
+				<li><a href="">작가토크</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+*/
+.menubar{
+	position: relative;
+	display: flex;
+	height: 52px;
+	border-top : 1px solid #656464;
+	border-bottom : 1px solid #656464;
+	line-height: 48px;
+}
+
+a.topmenuBtn{
+	border : 2px solid transparent;
+	border-radius: 50px;
+	padding : 6px 16px;
+	color: #565656;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 12px;
+}
+
+/*상단바*/
+.topmenu_wrap{
+   width: 100%;
+}
+.topmenu_Bar{
+	display: flex;
+	position: relative;
+	height: 52px;
+	border-top : 1px solid #656464;
+	border-bottom : 1px solid #656464;
+	line-height: 48px;
+}
+
+.topmenu_contain{
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto; 
+	text-align: center;
+}
+.topmenu_contain > ul {
+	position: relative;
+}
+.topmenu_contain > ul > li {
+	position: relative;
+	display: inline-block;
+	border : none;
+	padding: 0 2px;
+	transition: all .3s ease;
+}
+.topmenu_contain > ul > li > a {
+	position: relative;
+	padding : 6px 16px;
+	font-size: 13px;
+	font-weight: 500;
+	color: #565656;
+	line-height: 12px;
+	border : 2px solid transparent;
+	border-radius: 50px;
+}
+
+.topmenu_contain > ul > li:hover>a {
+	border: 2px solid #e50020;
+	color : #e50020;
+}
