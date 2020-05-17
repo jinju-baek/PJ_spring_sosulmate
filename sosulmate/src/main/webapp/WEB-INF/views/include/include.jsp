@@ -1,0 +1,11 @@
+<!-- 모든페이지에서 자주 사용하는 기능을 미리 선언해놓은 곳 -->
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!-- Path 설정 -->
+<%-- <c:set var="path" value="${pageContext.request.contextPath}" /> --%>
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/4d344f8121.js" crossorigin="anonymous"></script>
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- 구글웹폰트 -->
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
