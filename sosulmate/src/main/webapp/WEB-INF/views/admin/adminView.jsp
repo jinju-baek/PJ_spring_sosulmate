@@ -1,13 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ include file="../include/adminsidebar.jsp"%>
+<%@ include file="../include/adminSidebar.jsp"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <script src="https://kit.fontawesome.com/825f57de13.js" crossorigin="anonymous"></script>
 	<title>adminpageview</title>
-<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="${path}/resources/css/common.css">
 <style type="text/css">
 
 .admin_view_wrap{
