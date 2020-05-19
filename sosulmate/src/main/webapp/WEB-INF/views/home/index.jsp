@@ -5,7 +5,7 @@
 <html>
 <head>
 	<title>sosulmate_index</title>
-	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="${path}/resources/css/common.css">
 	<link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick.css" />
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css" />
@@ -450,16 +450,16 @@
 <body>
 	<section class="visual">
 		    <div class="center">
-		        <div><img src="../img/booklist1.jpg"></div>
-				<div><img src="../img/booklist2.png"></div>
-				<div><img src="../img/booklist3.jpg"></div>
-				<div><img src="../img/booklist4.jpg"></div>
-				<div><img src="../img/booklist5.jpg"></div>
-				<div><img src="../img/booklist6.jpg"></div>
-				<div><img src="../img/booklist7.jpg"></div>
-				<div><img src="../img/booklist8.jpg"></div>
-				<div><img src="../img/로맨스1.jpg"></div>
-				<div><img src="../img/로맨스2.jpg"></div>
+		        <div><img src="${path}/resources/img/booklist1.jpg"></div>
+				<div><img src="${path}/resources/img/booklist2.png"></div>
+				<div><img src="${path}/resources/img/booklist3.jpg"></div>
+				<div><img src="${path}/resources/img/booklist4.jpg"></div>
+				<div><img src="${path}/resources/img/booklist5.jpg"></div>
+				<div><img src="${path}/resources/img/booklist6.jpg"></div>
+				<div><img src="${path}/resources/img/booklist7.jpg"></div>
+				<div><img src="${path}/resources/img/booklist8.jpg"></div>
+				<div><img src="${path}/resources/img/로맨스1.jpg"></div>
+				<div><img src="${path}/resources/img/로맨스2.jpg"></div>
 		    </div>
     </section>
 
@@ -880,7 +880,7 @@
 							<a href="#" class="recommend_book_rank">
 								<div class="recommend_book_fullimg">
 									<div class="recommend_book_smallimg">
-										<img src="../img/1.jpg" class="recommend_book_oneimg">
+										<img src="${path}/resources/img/1.jpg" class="recommend_book_oneimg">
 										<div></div>
 									</div>
 								</div>
@@ -899,7 +899,7 @@
 							<a href="#" class="recommend_book_rank">
 								<div class="recommend_book_fullimg">
 									<div class="recommend_book_smallimg">
-										<img src="../img/2.jpg" class="recommend_book_oneimg">
+										<img src="${path}/resources/img/2.jpg" class="recommend_book_oneimg">
 										<div></div>
 									</div>
 								</div>
@@ -918,7 +918,7 @@
 							<a href="#" class="recommend_book_rank">
 								<div class="recommend_book_fullimg">
 									<div class="recommend_book_smallimg">
-										<img src="../img/3.jpg" class="recommend_book_oneimg">
+										<img src="${path}/resources/img/3.jpg" class="recommend_book_oneimg">
 										<div></div>
 									</div>
 								</div>
@@ -937,7 +937,7 @@
 							<a href="#" class="recommend_book_rank">
 								<div class="recommend_book_fullimg">
 									<div class="recommend_book_smallimg">
-										<img src="../img/4.jpg" class="recommend_book_oneimg">
+										<img src="${path}/resources/img/4.jpg" class="recommend_book_oneimg">
 										<div></div>
 									</div>
 								</div>
@@ -956,7 +956,7 @@
 							<a href="#" class="recommend_book_rank">
 								<div class="recommend_book_fullimg">
 									<div class="recommend_book_smallimg">
-										<img src="../img/5.jpg" class="recommend_book_oneimg">
+										<img src="${path}/resources/img/5.jpg" class="recommend_book_oneimg">
 										<div></div>
 									</div>
 								</div>
@@ -975,7 +975,7 @@
 							<a href="#" class="recommend_book_rank">
 								<div class="recommend_book_fullimg">
 									<div class="recommend_book_smallimg">
-										<img src="../img/6.jpg" class="recommend_book_oneimg">
+										<img src="${path}/resources/img/6.jpg" class="recommend_book_oneimg">
 										<div></div>
 									</div>
 								</div>
@@ -994,7 +994,7 @@
 							<a href="#" class="recommend_book_rank">
 								<div class="recommend_book_fullimg">
 									<div class="recommend_book_smallimg">
-										<img src="../img/7.jpg" class="recommend_book_oneimg">
+										<img src="${path}/resources/img/7.jpg" class="recommend_book_oneimg">
 										<div></div>
 									</div>
 								</div>
@@ -1026,7 +1026,7 @@
 							<a href="#" class="new_book_rank">
 								<div class="new_book_fullimg">
 									<div class="new_book_smallimg">
-										<img src="../img/1.jpg" class="new_book_oneimg">
+										<img src="${path}/resources/img/1.jpg" class="new_book_oneimg">
 										<div></div>
 									</div>
 								</div>
@@ -1045,7 +1045,7 @@
 							<a href="#" class="new_book_rank">
 								<div class="new_book_fullimg">
 									<div class="new_book_smallimg">
-										<img src="../img/2.jpg" class="new_book_oneimg">
+										<img src="${path}/resources/img/2.jpg" class="new_book_oneimg">
 										<div></div>
 									</div>
 								</div>
@@ -1064,7 +1064,7 @@
 							<a href="#" class="new_book_rank">
 								<div class="new_book_fullimg">
 									<div class="new_book_smallimg">
-										<img src="../img/3.jpg" class="new_book_oneimg">
+										<img src="${path}/resources/img/3.jpg" class="new_book_oneimg">
 										<div></div>
 									</div>
 								</div>
@@ -1083,7 +1083,7 @@
 							<a href="#" class="new_book_rank">
 								<div class="new_book_fullimg">
 									<div class="new_book_smallimg">
-										<img src="../img/4.jpg" class="new_book_oneimg">
+										<img src="${path}/resources/img/4.jpg" class="new_book_oneimg">
 										<div></div>
 									</div>
 								</div>
@@ -1102,7 +1102,7 @@
 							<a href="#" class="new_book_rank">
 								<div class="new_book_fullimg">
 									<div class="new_book_smallimg">
-										<img src="../img/5.jpg" class="new_book_oneimg">
+										<img src="${path}/resources/img/5.jpg" class="new_book_oneimg">
 										<div></div>
 									</div>
 								</div>
@@ -1121,7 +1121,7 @@
 							<a href="#" class="new_book_rank">
 								<div class="new_book_fullimg">
 									<div class="new_book_smallimg">
-										<img src="../img/6.jpg" class="new_book_oneimg">
+										<img src="${path}/resources/img/6.jpg" class="new_book_oneimg">
 										<div></div>
 									</div>
 								</div>
@@ -1140,7 +1140,7 @@
 							<a href="#" class="new_book_rank">
 								<div class="new_book_fullimg">
 									<div class="new_book_smallimg">
-										<img src="../img/7.jpg" class="new_book_oneimg">
+										<img src="${path}/resources/img/7.jpg" class="new_book_oneimg">
 										<div></div>
 									</div>
 								</div>

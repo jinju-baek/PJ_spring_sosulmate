@@ -5,7 +5,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>sosulmate header</title>
-	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="${path}/resources/css/common.css">
 	<script src="https://kit.fontawesome.com/83b564820d.js" crossorigin="anonymous"></script>
 	<style type="text/css">
 		div, span {
@@ -141,7 +141,7 @@
 		<div class="header_content">
 			<div class="header_content_logo">
 				<a href="#">
-					<img class="header_content_logo_img" alt="로고이미지" src="../img/로고.png">	
+					<img class="header_content_logo_img" alt="로고이미지" src="${path}/resources/img/로고.png">	
 				</a>
 			</div>
 			<div class="header_content_wrap">

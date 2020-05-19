@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="${path}/resources/css/common.css">
 	<script src="https://kit.fontawesome.com/83b564820d.js" crossorigin="anonymous"></script>
 	<title>sosulmate_booklist_romance</title>
 	<style type="text/css">
@@ -807,7 +807,7 @@
 										<div class="booklist_product">
 											<div class="booklist_img">
 												<a href="#">
-													<img src="../img/로맨스1.jpg" class="booklist_imgclass">
+													<img src="${path}/resources/img/로맨스1.jpg" class="booklist_imgclass">
 												</a>
 											</div>
 											<div class="booklist_contents">
@@ -843,7 +843,7 @@
 										<div class="booklist_product">
 											<div class="booklist_img">
 												<a href="#">
-													<img src="../img/로맨스2.jpg" class="booklist_imgclass">
+													<img src="${path}/resources/img/로맨스2.jpg" class="booklist_imgclass">
 												</a>
 											</div>
 											<div class="booklist_contents">
@@ -880,7 +880,7 @@
 										<div class="booklist_product">
 											<div class="booklist_img">
 												<a href="#">
-													<img src="../img/로맨스3.jpg" class="booklist_imgclass">
+													<img src="${path}/resources/img/로맨스3.jpg" class="booklist_imgclass">
 												</a>
 											</div>
 											<div class="booklist_contents">
@@ -917,7 +917,7 @@
 										<div class="booklist_product">
 											<div class="booklist_img">
 												<a href="#">
-													<img src="../img/로맨스4.jpg" class="booklist_imgclass">
+													<img src="${path}/resources/img/로맨스4.jpg" class="booklist_imgclass">
 												</a>
 											</div>
 											<div class="booklist_contents">
@@ -954,7 +954,7 @@
 										<div class="booklist_product">
 											<div class="booklist_img">
 												<a href="#">
-													<img src="../img/로맨스5.jpg" class="booklist_imgclass">
+													<img src="${path}/resources/img/로맨스5.jpg" class="booklist_imgclass">
 												</a>
 											</div>
 											<div class="booklist_contents">
@@ -992,7 +992,7 @@
 										<div class="booklist_product">
 											<div class="booklist_img">
 												<a href="#">
-													<img src="../img/로맨스6.jpg" class="booklist_imgclass">
+													<img src="${path}/resources/img/로맨스6.jpg" class="booklist_imgclass">
 												</a>
 											</div>
 											<div class="booklist_contents">
@@ -1030,7 +1030,7 @@
 										<div class="booklist_product">
 											<div class="booklist_img">
 												<a href="#">
-													<img src="../img/로맨스1.jpg" class="booklist_imgclass">
+													<img src="${path}/resources/img/로맨스1.jpg" class="booklist_imgclass">
 												</a>
 											</div>
 											<div class="booklist_contents">
@@ -1066,7 +1066,7 @@
 										<div class="booklist_product">
 											<div class="booklist_img">
 												<a href="#">
-													<img src="../img/로맨스2.jpg" class="booklist_imgclass">
+													<img src="${path}/resources/img/로맨스2.jpg" class="booklist_imgclass">
 												</a>
 											</div>
 											<div class="booklist_contents">
@@ -1103,7 +1103,7 @@
 										<div class="booklist_product">
 											<div class="booklist_img">
 												<a href="#">
-													<img src="../img/로맨스3.jpg" class="booklist_imgclass">
+													<img src="${path}/resources/img/로맨스3.jpg" class="booklist_imgclass">
 												</a>
 											</div>
 											<div class="booklist_contents">
@@ -1140,7 +1140,7 @@
 										<div class="booklist_product">
 											<div class="booklist_img">
 												<a href="#">
-													<img src="../img/로맨스4.jpg" class="booklist_imgclass">
+													<img src="${path}/resources/img/로맨스4.jpg" class="booklist_imgclass">
 												</a>
 											</div>
 											<div class="booklist_contents">
@@ -1177,7 +1177,7 @@
 										<div class="booklist_product">
 											<div class="booklist_img">
 												<a href="#">
-													<img src="../img/로맨스1.jpg" class="booklist_imgclass">
+													<img src="${path}/resources/img/로맨스1.jpg" class="booklist_imgclass">
 												</a>
 											</div>
 											<div class="booklist_contents">
@@ -1213,7 +1213,7 @@
 										<div class="booklist_product">
 											<div class="booklist_img">
 												<a href="#">
-													<img src="../img/로맨스2.jpg" class="booklist_imgclass">
+													<img src="${path}/resources/img/로맨스2.jpg" class="booklist_imgclass">
 												</a>
 											</div>
 											<div class="booklist_contents">
@@ -1250,7 +1250,7 @@
 										<div class="booklist_product">
 											<div class="booklist_img">
 												<a href="#">
-													<img src="../img/로맨스3.jpg" class="booklist_imgclass">
+													<img src="${path}/resources/img/로맨스3.jpg" class="booklist_imgclass">
 												</a>
 											</div>
 											<div class="booklist_contents">
@@ -1287,7 +1287,7 @@
 										<div class="booklist_product">
 											<div class="booklist_img">
 												<a href="#">
-													<img src="../img/로맨스4.jpg" class="booklist_imgclass">
+													<img src="${path}/resources/img/로맨스4.jpg" class="booklist_imgclass">
 												</a>
 											</div>
 											<div class="booklist_contents">

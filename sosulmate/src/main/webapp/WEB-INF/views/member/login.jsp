@@ -4,7 +4,7 @@
 <html>
 <head>
 	<title>sosulmate_login</title>
-	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="${path}/resources/css/common.css">
 	<style type="text/css">
 		/*div { border: 1px solid red; }*/
 		a {
@@ -85,7 +85,7 @@
 			<div class="login_content">
 				<header>
 					<div id="header_login_div">
-						<a href="#"><img alt= "로고이미지" src="../img/로고.png"></a>
+						<a href="#"><img alt= "로고이미지" src="${path}/resources/img/로고.png"></a>
 					</div>
 				</header>
 				<section>
