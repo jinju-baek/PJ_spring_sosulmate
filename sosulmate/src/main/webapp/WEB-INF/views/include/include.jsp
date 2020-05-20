@@ -2,7 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!-- Path 설정 -->
-<%-- <c:set var="path" value="${pageContext.request.contextPath}" /> --%>
+<c:set var="path" value="${pageContext.request.contextPath}" />
 <!-- font awesome -->
 <script src="https://kit.fontawesome.com/4d344f8121.js" crossorigin="anonymous"></script>
 <!-- jQuery -->
