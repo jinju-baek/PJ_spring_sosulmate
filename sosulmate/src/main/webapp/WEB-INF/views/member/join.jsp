@@ -4,7 +4,7 @@
 <html>
 <head>
 	<title>sosulmate_join</title>
-	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="${path}/resources/css/common.css">
 	<style type="text/css">
 		a {
 			color: inherit;
