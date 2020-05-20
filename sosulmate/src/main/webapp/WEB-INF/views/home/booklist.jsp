@@ -7,161 +7,184 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="${path}/resources/css/common.css">
 	<script src="https://kit.fontawesome.com/83b564820d.js" crossorigin="anonymous"></script>
-	<title>sosulmate_booklist_romance</title>
-	<style type="text/css">
-		fieldset {
-			margin: 0;
-			padding: 0;
-			border: 0;
-			font: inherit;
-			vertical-align: baseline;
-		}
-		.invisible {
-			position: absolute;
-			width: 1px;
-			height: 1px;
-			margin: -1px;
-			padding: 0;
-			overflow: hidden;
-			border : 0;
-			clip: rect(0, 0, 0, 0);
-		}
-		#books_contents_wrap {
-			width: 100%;
-			position: relative;
-			overflow-x: hidden;
-			overflow-y: hidden;
-			min-height: 500px;
-		}
-		#romancekeyword {
-			width: 1140px;
-			margin-bottom: 24px;
-			overflow: hidden;
-			margin: 15px auto 15px;
-		}
-		.Header {
-			position: relative;
-			height: 56px;
-		}
-		.romance > .Header {
-			background-color: #3f1c2b;
-		}
-		.Header_Maintitle {
-			display: inline-block;
-			line-height: 56px;
-			color: #fff;
-			font-size: 22px;
-			font-weight: 700;
-		}
-		.fa-search {
-			width: 20px;
-			height: 20px;
-			margin-right: 8px;
-			margin-left : 1em;
-			vertical-align: middle;
-			fill: #fff;
-		}
-		.Header_subtitle {
-			color: #d16476;
-			padding-left: 8px;
-			font-size: 12px;
-			vertical-align: top;
-			display: inline-block;
-			line-height: 56px;
-		}
-		.Header_Resetbutton {
-			background-color: #3f1c2b;
-			position: absolute;
-			top: 50%;
-			right: 11px;
-			width: 84px;
-			height: 36px;
-			transform: translate3d(0, -50%, 0);
-			border-radius: 3px;
-			color: #fff;
-			font-size: 14px;
-			font-weight: 700;
-		}
-		.romance > .romance_keywordgroup {
-			border-color: #e7d6d9;
-			background: #faf4f5;
-		}
-		.romance_keywordgroup {
-			box-sizing: border-box;
-			display: flex;
-			width: 100%;
-			border : 1px solid transparent;
-			border-top: 0;
-		}
-		.fieldset {
-			display: inline-block;
-			-webkit-box-flex: 1;
-			flex: 1 0 0;
-		}
-		.Group_header {
-			color: #d16476;
-			padding: 17px 0 9px;
-			font-size: 12px;
-			font-weight: 700;
-			text-indent: 13px;
-		}
-		.ScrollWrapper {
-			position: relative;
-			overflow: hidden;
-			width: 100%;
-			height: 162px;
-			border-right-width: 1px;
-		}
-		.subCategory {
-			padding: 6px 10px;
-			padding-right: 22px; 
-		}
-		.keywordList {
-			display: block;
-			margin-bottom: 2px;
-		}
-		.keyword {
-			color: #3e0710;
-			display: block;
-			position: relative;
-			border-radius: 3px;
-			font-size: 13px;
-			font-weight: 700;
-			line-height: 1.2;
-			white-space: break-all;
-		}
-		input[type=checkbox] {
-			width: 18px;
-			height: 18px;
-			border: 1px solid #b9bcc2;
-			background-color: transparent;
-			cursor: pointer;
-			box-shadow: inset 0 1px 0 #e5e5e5;
-			border-radius: 4px;
-			box-sizing: border-box;
-			padding: 0;
+	<title>소설메이트 : 소설목록</title>
+<style type="text/css">
 
-		}
-		.keyword_text {
-			display: block;
-			padding: 6px 5px;
-			border-radius: 3px;
-		}
-		.Scrollbar {
- 			background: #f1e1e3;
- 			top: 7px;
- 			right: 9px;
- 			bottom: 7px;
- 			overflow: hidden;
- 			border-radius: 4px;
- 			pointer-events: auto;
-		}
-		.Scollindicator {
-			background: #e9c1c6;
-			border-radius: 4px;
-			cursor: pointer;
-		}
-		label:hover {
+.fieldset {
+margin: 0;
+padding: 0;
+border: 0;
+font: inherit;
+vertical-align: baseline;
+}
+
+.invisible {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+padding: 0;
+overflow: hidden;
+border : 0;
+clip: rect(0, 0, 0, 0);
+}
+
+#books_contents_wrap {
+width: 100%;
+position: relative;
+overflow-x: hidden;
+overflow-y: hidden;
+min-height: 500px;
+}
+
+#romancekeyword {
+width: 1140px;
+margin-bottom: 24px;
+overflow: hidden;
+margin: 15px auto 15px;
+}
+
+.Header {
+position: relative;
+height: 56px;
+}
+
+.romance > .Header {
+background-color: #3f1c2b;
+}
+
+.Header_Maintitle {
+display: inline-block;
+line-height: 56px;
+color: #fff;
+font-size: 22px;
+font-weight: 700;
+}
+
+.keysearch {
+width: 20px;
+height: 20px;
+margin-right: 8px;
+margin-left : 1em;
+vertical-align: middle;
+fill: #fff;
+}
+
+.Header_subtitle {
+color: #d16476;
+padding-left: 8px;
+font-size: 12px;
+vertical-align: top;
+display: inline-block;
+line-height: 56px;
+}
+
+.Header_Resetbutton {
+background-color: #3f1c2b;
+position: absolute;
+top: 50%;
+right: 11px;
+width: 84px;
+height: 36px;
+transform: translate3d(0, -50%, 0);
+border-radius: 3px;
+color: #fff;
+font-size: 14px;
+font-weight: 700;
+}
+
+.romance > .romance_keywordgroup {
+border-color: #e7d6d9;
+background: #faf4f5;
+}
+
+.romance_keywordgroup {
+box-sizing: border-box;
+display: flex;
+width: 100%;
+border : 1px solid transparent;
+border-top: 0;
+}
+
+.fieldset {
+display: inline-block;
+-webkit-box-flex: 1;
+flex: 1 0 0;
+}
+
+.Group_header {
+color: #d16476;
+padding: 17px 0 9px;
+font-size: 12px;
+font-weight: 700;
+text-indent: 13px;
+}
+
+.ScrollWrapper {
+position: relative;
+overflow: hidden;
+width: 100%;
+height: 162px;
+border-right-width: 1px;
+}
+
+.subCategory {
+padding: 6px 10px;
+padding-right: 22px; 
+}
+
+.keywordList {
+display: block;
+margin-bottom: 2px;
+}
+
+.keyword {
+color: #3e0710;
+display: block;
+position: relative;
+border-radius: 3px;
+font-size: 13px;
+font-weight: 700;
+line-height: 1.2;
+white-space: break-all;
+}
+
+input[type=checkbox] {
+width: 18px;
+height: 18px;
+border: 1px solid #b9bcc2;
+background-color: transparent;
+cursor: pointer;
+box-shadow: inset 0 1px 0 #e5e5e5;
+border-radius: 4px;
+box-sizing: border-box;
+padding: 0;
+}
+
+
+.keyword_text {
+display: block;
+padding: 6px 5px;
+border-radius: 3px;
+}
+
+.Scrollbar {
+background: #f1e1e3;
+top: 7px;
+right: 9px;
+bottom: 7px;
+overflow: hidden;
+border-radius: 4px;
+pointer-events: auto;
+}
+
+.Scollindicator {
+background: #e9c1c6;
+border-radius: 4px;
+cursor: pointer;
+}
+
+label:hover {
 			background-color: #e3a2ac;
 		}
 		
@@ -429,7 +452,7 @@
 				<section class="romance" id="romancekeyword">
 					<header class="Header">
 						<h1 class="Header_Maintitle">
-							<i class="fas fa-search" width="48" height="49"></i>
+							<i class="fas fa-search keysearch" width="48" height="49"></i>
 							로맨스 키워드로 검색하기
 						</h1>
 						<p class="Header_subtitle">키워드로  마음에 드는 책을 찾아보세요!</p>
