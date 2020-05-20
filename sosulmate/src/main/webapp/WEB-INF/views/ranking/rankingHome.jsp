@@ -7,7 +7,7 @@
 <meta charset="utf-8">
 <script src="https://kit.fontawesome.com/825f57de13.js" crossorigin="anonymous"></script>
 <title>rankingHome</title>
-<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="${path}/resources/css/common.css">
 <style type="text/css">
 a{
 	text-decoration: none;
