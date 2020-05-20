@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="../include/header.jsp"%> 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -163,6 +164,69 @@
 		label:hover {
 			background-color: #e3a2ac;
 		}
+		
+	
+		/*상단바*/
+		.sosul_booklist_view_wrap{
+		width : 100%;
+		margin : 0 auto;
+		}
+		
+.ranking_menu_wrap{
+	width: 100%;
+}
+
+.ranking_menu_genre_wrap{
+	position: relative;
+	height: 52px;
+
+	border-bottom : 1px solid #656464;
+	display: flex;
+	line-height: 48px;
+}
+
+.ranking_menu_plat_contain{
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+.ranking_menu_plat_contain > ul {
+	list-style: none;
+	padding : 0;
+	margin : 0;
+	position: relative;
+}
+.ranking_menu_plat_contain > ul > li {
+	position: relative;
+	border : 0;
+	display: inline-block;
+	float: none;
+	padding: 0 2px;
+	transition: all .3s ease;
+
+
+}
+.ranking_menu_plat_contain > ul > li > a {
+	border-radius: 50px;
+	position: relative;
+	padding : 6px 16px;
+	font-size: 13px;
+	line-height: 12px;
+	color: #565656;
+	font-weight: 500;
+	border : 2px solid transparent;
+
+}
+
+.ranking_menu_plat_contain > ul > li:hover>a {
+	border-width: 2px;
+	border-style: solid;
+	border-color : #E50020;
+	color : #E50020;
+}
 
 		/*로맨스리스트============================================================*/
 
@@ -327,36 +391,38 @@
 	</style>
 </head>
 <body>
-	<div class="page_menu_content">
-		<div class="container">
-			<nav>
-				<ul>
-					<li class="active">
-						<a href="#">전체</a>
-					</li>
-					<li>
-						<a href="#">로맨스</a>
-					</li>
-					<li>
-						<a href="#">로맨스판타지</a>
-					</li>
-					<li>
-						<a href="#">BL</a>
-					</li>
-					<li>
-						<a href="#">판타지</a>
-					</li>
-					<li>
-						<a href="#">무협</a>
-					</li>
-					<li>
-						<a href="#">라이트노벨</a>
-					</li>
-				</ul>
-			</nav>
+<div class="sosul_booklist_view_wrap">
+		<div class="ranking_menu_wrap">
+			<div class="topmenu_wrap">
+				<div class="topmenu_Bar">
+					<div class="topmenu_contain">
+						<ul>
+							<li>
+								<a href="#">전체</a>
+							</li>
+							<li>
+								<a href="#">로맨스</a>
+							</li>
+							<li>
+								<a href="#">로맨스판타지</a>
+							</li>
+							<li>
+								<a href="#">BL</a>
+							</li>
+							<li>
+								<a href="#">판타지</a>
+							</li>
+							<li>
+								<a href="#">무협</a>
+							</li>
+							<li>
+								<a href="#">라이트노벨</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
-
 	<div id="books_contents_wrap">
 		<div>
 			<div id="appReact">
@@ -1327,7 +1393,8 @@
 			</div>
 		</div>
 	</div>
-
+	</div>
+<%@ include file="../include/footer.jsp" %>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript">
