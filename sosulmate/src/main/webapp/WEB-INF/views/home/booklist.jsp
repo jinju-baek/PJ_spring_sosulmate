@@ -185,8 +185,8 @@ cursor: pointer;
 }
 
 label:hover {
-			background-color: #e3a2ac;
-		}
+background-color: #e3a2ac;
+}
 		
 	
 /*상단바*/
@@ -199,203 +199,285 @@ margin : 0 auto;
 width: 100%;
 }
 
+.ranking_menu_plat_wrap{
+position: relative;
+height: 52px;
+display: flex;
+line-height: 48px;
+box-shadow: 0 0 1px 1px rgba(20,23,28,.1),0 3px 1px 0 rgba(20,23,28,.1);
+}
 
+.ranking_menu_plat_contain{
+width: 100%;
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+text-align: center;
+}
 
-		/*로맨스리스트============================================================*/
+.ranking_menu_plat_contain > ul {
+list-style: none;
+padding : 0;
+margin : 0;
+position: relative;
+}
 
-		.page_menu_content {
-			position: relative;
-			background-color: #fff;
-			border-bottom: 2px solid #9E9E9E;
-			border-top: 2px solid  #9E9E9E;
-			height: 52px;
-			line-height: 48px;
-		}
-		.page_menu_content > .container {
-			position: relative;
-		}
-		.page_menu_content nav {
-			background-color: #fff;
-			text-align : center;
-		}
-		.page_menu_content nav > ul {
-			list-style: none;
-			padding: 0;
-			margin : 0;
-			position: relative;
-		}
-		.page_menu_content nav > ul > li {
-			position: relative;
-			border: 0;
-			display: inline-block;
-			float: none;
-			padding: 0px 50px;
-		}
-		.booklist_title {
-			padding-top: 0px!important;
-			max-width: 1140px;
-			margin : 0 auto;
-		}
-		.booklist_name {
-			display: inline-block;
-		}
-		strong { font-weight: 600; }
-		small { font-size: 80%; font-weight: 400; }
-		.booklist_day {
-			font-size: 13px;
-			text-align: right;
-			padding-top: 30px;
-		}
-		span { padding-left: 8px; }
-		.booklist_all {
-			display: flex;
-			padding-top: 3px;
-		}
-		.booklist_order {
-			font-size: 13px;
-			margin-left: auto;
-		}
-		.border {
-			border-bottom: 1px solid rgba(0,0,0,.1);
-		}
-		.booklist_content_wrap {
-			padding-top: 15px!important;
-		}
-		.booklist_content {
-			max-width: 1140px;
-			margin : 0 auto;
-		}
-		.booklist_class {
-			position: relative;
-		}
-		.booklist_list {
-			flex-wrap: -15px;
-			margin-left: -15px;
-		}
-		.booklist_bar {
-			-webkit-box-flex : 0;
-			flex : 0 0 440px;
-			max-width: 100%;
-		}
-		.booklist_one {
-			width: 20%;
-			float : left;
-			-webkit-box-flex : 0;
-			flex-wrap: 0 0 20%;
-			max-width: 20%;
-			position: relative;
-			padding-left: 20px;
-			padding-right: 10px;
-		}
-		.booklist_product {
-			margin-bottom: 40px;
-			position: relative;
-			display: block;
-		}
-		.booklist_img {
-			text-align: center;
-			display: block;
-			width: 100%;
-			height: auto;
-			position: relative;
-			overflow: hidden;
-		}
-		.booklist_product_category {
-			display: inline-block;
-		}
-		.booklist_product_category a {
-			font-size: 11px;
-		}
-		.booklist_product_author {
-			font-size: 12px;
-			display: inline-block;
-		}
-		.booklist_product_title h3, .booklist_product_title h3 a {
-			font-size: 15px;
-			line-height: 20px;
-		}
-		.booklist_product_reviews {
-			font-size: 12px;
-			display: inline-block;
-			float: none;
-			margin-left: 5px;
-		}
-		.booklist_average_list {
-			height: 10px;
-			font-size: 11px;
-			line-height: 1.09;
-			color : #999999;
-		}
-		.booklist_basic_star {
-			display: flex;
-			position: relative;
-			margin-right: 2px;
-			line-height: 0;
-		}
-		.booklist_star {
-			width: 90px;
-			height: 20px;
-		}
-		.booklist_yellow_star {
-			position: absolute;
-			left: 0;
-			top: 0;
-			height: 100%;
-			overflow: hidden;
-		}
-		.booklist_number {
-			padding-top: 6px;
-		}
-		.booklist_pp {
-			display: flex;
-			justify-content: space-between;
-		}
-		.btn_main_booklist_more {
-			border: 2px solid #ddd;
-			width: 100%;
-			height: 60px;
-			padding: 18px 20px;
-			display: inline-block;
-			text-align: center;
-		}
+.ranking_menu_plat_contain > ul > li {
+position: relative;
+border : 0;
+display: inline-block;
+float: none;
+padding: 0 2px;
+transition: all .3s ease;
+}
 
+.ranking_menu_plat_contain > ul > li > a {
+border-radius: 50px;
+position: relative;
+padding : 6px 16px;
+font-size: 13px;
+line-height: 12px;
+color: #565656;
+font-weight: 500;
+border : 2px solid transparent;
+}
 
+.ranking_menu_plat_contain > ul > li:hover>a {
+border-width: 2px;
+border-style: solid;
+border-color : #E50020;
+color : #E50020;
+}
 
-	</style>
+/*로맨스리스트============================================================*/
+
+.page_menu_content {
+position: relative;
+background-color: #fff;
+border-bottom: 2px solid #9E9E9E;
+border-top: 2px solid  #9E9E9E;
+height: 52px;
+line-height: 48px;
+}
+
+.page_menu_content > .container {
+position: relative;
+}
+
+.page_menu_content nav {
+background-color: #fff;
+text-align : center;
+}
+
+.page_menu_content nav > ul {
+list-style: none;
+padding: 0;
+margin : 0;
+position: relative;
+}
+
+.page_menu_content nav > ul > li {
+position: relative;
+border: 0;
+display: inline-block;
+float: none;
+padding: 0px 50px;
+}
+
+.booklist_title {
+padding-top: 0px!important;
+max-width: 1140px;
+margin : 0 auto;
+}
+
+.booklist_name {
+display: inline-block;
+}
+
+strong { font-weight: 600; }
+
+small { font-size: 80%; font-weight: 400; }
+
+.booklist_day {
+font-size: 13px;
+text-align: right;
+padding-top: 30px;
+}
+
+span { padding-left: 8px; }
+
+.booklist_all {
+display: flex;
+padding-top: 3px;
+}
+
+.booklist_order {
+font-size: 13px;
+margin-left: auto;
+}
+
+.border {
+border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.booklist_content_wrap {
+padding-top: 15px!important;
+}
+
+.booklist_content {
+max-width: 1140px;
+margin : 0 auto;
+}
+
+.booklist_class {
+padding-bottom : 30px;
+position: relative;
+}
+
+.booklist_list {
+flex-wrap: -15px;
+margin-left: -15px;
+}
+
+.booklist_bar {
+-webkit-box-flex : 0;
+flex : 0 0 440px;
+max-width: 100%;
+}
+
+.booklist_one {
+width: 20%;
+float : left;
+-webkit-box-flex : 0;
+flex-wrap: 0 0 20%;
+max-width: 20%;
+position: relative;
+padding-left: 20px;
+padding-right: 10px;
+}
+
+.booklist_product {
+margin-bottom: 40px;
+position: relative;
+display: block;
+}
+
+.booklist_img {
+text-align: center;
+display: block;
+width: 100%;
+height: auto;
+position: relative;
+overflow: hidden;
+}
+
+.booklist_product_category {
+display: inline-block;
+}
+
+.booklist_product_category a {
+font-size: 11px;
+}
+
+.booklist_product_author {
+font-size: 12px;
+display: inline-block;
+}
+
+.booklist_product_title h3, .booklist_product_title h3 a {
+font-size: 15px;
+line-height: 20px;
+}
+
+.booklist_product_reviews {
+font-size: 12px;
+display: inline-block;
+float: none;
+margin-left: 5px;
+}
+
+.booklist_average_list {
+height: 10px;
+font-size: 11px;
+line-height: 1.09;
+color : #999999;
+}
+
+.booklist_basic_star {
+display: flex;
+position: relative;
+margin-right: 2px;
+line-height: 0;
+}
+
+.booklist_star {
+width: 90px;
+height: 20px;
+}
+
+.booklist_yellow_star {
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+overflow: hidden;
+}
+
+.booklist_number {
+padding-top: 6px;
+}
+
+.booklist_pp {
+display: flex;
+justify-content: space-between;
+}
+
+.btn_main_booklist_more {
+border: 2px solid #ddd;
+width: 100%;
+height: 60px;
+padding: 18px 20px;
+display: inline-block;
+text-align: center;
+}
+
+</style>
 </head>
 <body>
 <div class="sosul_booklist_view_wrap">
+	<div class="ranking_menu_genre">
 		<div class="ranking_menu_wrap">
-			<div class="topmenu_wrap">
-				<div class="topmenu_Bar">
-					<div class="topmenu_contain">
-						<ul>
-							<li>
-								<a href="#">전체</a>
-							</li>
-							<li>
-								<a href="#">로맨스</a>
-							</li>
-							<li>
-								<a href="#">로맨스판타지</a>
-							</li>
-							<li>
-								<a href="#">BL</a>
-							</li>
-							<li>
-								<a href="#">판타지</a>
-							</li>
-							<li>
-								<a href="#">무협</a>
-							</li>
-							<li>
-								<a href="#">라이트노벨</a>
-							</li>
-						</ul>
-					</div>
+			<div class="ranking_menu_plat_wrap">
+				<div class="ranking_menu_plat_contain">
+					<ul>
+						<li>
+							<a href="#">전체</a>
+						</li>
+						<li>
+							<a href="#">로맨스</a>
+						</li>
+						<li>
+							<a href="#">로맨스판타지</a>
+						</li>
+						<li>
+							<a href="#">BL</a>
+						</li>
+						<li>
+							<a href="#">판타지</a>
+						</li>
+						<li>
+							<a href="#">무협</a>
+						</li>
+						<li>
+							<a href="#">라이트노벨</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
+	</div>
+	
 	<div id="books_contents_wrap">
 		<div>
 			<div id="appReact">
