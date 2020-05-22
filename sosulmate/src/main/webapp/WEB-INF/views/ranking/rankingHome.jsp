@@ -25,7 +25,6 @@ a{
 .ranking_menu_plat_wrap{
 	position: relative;
 	height: 52px;
-	border-top : 1px solid #656464;
 	display: flex;
 	line-height: 48px;
 }
@@ -201,7 +200,7 @@ a{
 	display: inline-block;
 	height: 9px;
 	overflow: hidden;
-	background: url('../img/star-ranking.png') no-repeat;
+	background: url('${path}/resources/img/star-ranking.png') no-repeat;
 
 }
 .star-rating span {
@@ -289,239 +288,43 @@ a{
 			<div class="sosul_rank_content">
 				<section id="ranking_best">
 					<div class="sosul_rank_list">
-						<div class="sosul_rank_list_content">
-							<p class="sosul_rank">1</p>
-							<div class="sosul_rank_img_content">
-								<div class="sosul_ranking_img_thumbnail_wrap">
-									<div class="ranking_sosul_thumbnail">
-										<a href=""><img class = "rank_thumbnail"src="../img/resource.jpg"></a>
-										<span></span>
-									</div>
-									<a href=""><span class="sosul_rank_hidden">상세페이지 바로가기</span></a>
-								</div>
-							</div>
-
-							<div class="ranking_sosul_info_wrap">
-								<h class="ranking_sosul_tilte">
-									<a href=""><span class="sosul_rank_title_text">제목이라네</span></a>
-								</h>
-								<p class="ranking_sosul_writer"><a href="">작가임</a></p>
-								<p class="ranking_star_rate_wrap">
-									<span class="ranking_star_rate">
-										<div class="wrap-star">
-											<div class="star-rating">
-												<span style="width:60%"></span>
-											</div>
-											<div class="ranking_star_rate_pcount">777 
-												<span class="ranking_star_rate_pcount_unit">명</span>
-											</div>
+						<c:forEach items="${bookList}" var="one">
+							<div class="sosul_rank_list_content">
+								<p class="sosul_rank">${one.bno}</p>
+								<div class="sosul_rank_img_content">
+									<div class="sosul_ranking_img_thumbnail_wrap">
+										<div class="ranking_sosul_thumbnail">
+											<a href=""><img class = "rank_thumbnail"src="${one.thumbnail}"></a>
+											<span></span>
 										</div>
-									</span>
-								</p>
-								<p><span class="ranking_count_num">총 99화</span></p>
-							</div>
-						</div>
-
-						<div class="sosul_rank_list_content">
-							<p class="sosul_rank">2</p>
-							<div class="sosul_rank_img_content">
-								<div class="sosul_ranking_img_thumbnail_wrap">
-									<div class="ranking_sosul_thumbnail">
-										<a href=""><img class = "rank_thumbnail"src="../img/resource.jpg"></a>
-										<span></span>
+										<a href=""><span class="sosul_rank_hidden">상세페이지 바로가기</span></a>
 									</div>
-									<a href=""><span class="sosul_rank_hidden">상세페이지 바로가기</span></a>
 								</div>
-							</div>
-
-							<div class="ranking_sosul_info_wrap">
-								<h class="ranking_sosul_tilte">
-									<a href=""><span class="sosul_rank_title_text">제목이라네</span></a>
-								</h>
-								<p class="ranking_sosul_writer"><a href="">작가임</a></p>
-								<p class="ranking_star_rate_wrap">
-									<span class="ranking_star_rate">
-										<div class="wrap-star">
-											<div class="star-rating">
-												<span style="width:90%"></span>
+	
+								<div class="ranking_sosul_info_wrap">
+									<h5 class="ranking_sosul_tilte">
+										<a href=""><span class="sosul_rank_title_text">${one.title}</span></a>
+									</h5>
+									<p class="ranking_sosul_writer"><a href="">${one.writer}</a></p>
+									<p class="ranking_star_rate_wrap">
+										<span class="ranking_star_rate">
+											<div class="wrap-star">
+												<div class="star-rating">
+													<span style="width:60%"></span>
+												</div>
+												<div class="ranking_star_rate_pcount">777 
+													<span class="ranking_star_rate_pcount_unit">명</span>
+												</div>
 											</div>
-											<div class="ranking_star_rate_pcount">777 
-												<span class="ranking_star_rate_pcount_unit">명</span>
-											</div>
-										</div>
-									</span>
-								</p>
-								<p><span class="ranking_count_num">총 99화</span></p>
+										</span>
+									</p>
+									<p><span class="ranking_count_num">${one.complete}</span></p>
+								</div>	
 							</div>
-						</div>
-
-						<div class="sosul_rank_list_content">
-							<p class="sosul_rank">3</p>
-							<div class="sosul_rank_img_content">
-								<div class="sosul_ranking_img_thumbnail_wrap">
-									<div class="ranking_sosul_thumbnail">
-										<a href=""><img class = "rank_thumbnail"src="../img/resource.jpg"></a>
-										<span></span>
-									</div>
-									<a href=""><span class="sosul_rank_hidden">상세페이지 바로가기</span></a>
-								</div>
-							</div>
-
-							<div class="ranking_sosul_info_wrap">
-								<h class="ranking_sosul_tilte">
-									<a href=""><span class="sosul_rank_title_text">제목이라네</span></a>
-								</h>
-								<p class="ranking_sosul_writer"><a href="">작가임</a></p>
-								<p class="ranking_star_rate_wrap">
-									<span class="ranking_star_rate">
-										<div class="wrap-star">
-											<div class="star-rating">
-												<span style="width:30%"></span>
-											</div>
-											<div class="ranking_star_rate_pcount">777 
-												<span class="ranking_star_rate_pcount_unit">명</span>
-											</div>
-										</div>
-									</span>
-								</p>
-								<p><span class="ranking_count_num">총 99화</span></p>
-							</div>
-						</div>
-						<div class="sosul_rank_list_content">
-							<p class="sosul_rank">4</p>
-							<div class="sosul_rank_img_content">
-								<div class="sosul_ranking_img_thumbnail_wrap">
-									<div class="ranking_sosul_thumbnail">
-										<a href=""><img class = "rank_thumbnail"src="../img/resource.jpg"></a>
-										<span></span>
-									</div>
-									<a href=""><span class="sosul_rank_hidden">상세페이지 바로가기</span></a>
-								</div>
-							</div>
-
-							<div class="ranking_sosul_info_wrap">
-								<h class="ranking_sosul_tilte">
-									<a href=""><span class="sosul_rank_title_text">제목이라네</span></a>
-								</h>
-								<p class="ranking_sosul_writer"><a href="">작가임</a></p>
-								<p class="ranking_star_rate_wrap">
-									<span class="ranking_star_rate">
-										<div class="wrap-star">
-											<div class="star-rating">
-												<span style="width:20%"></span>
-											</div>
-											<div class="ranking_star_rate_pcount">777 
-												<span class="ranking_star_rate_pcount_unit">명</span>
-											</div>
-										</div>
-									</span>
-								</p>
-								<p><span class="ranking_count_num">총 99화</span></p>
-							</div>
-						</div>
-
-						<div class="sosul_rank_list_content">
-							<p class="sosul_rank">5</p>
-							<div class="sosul_rank_img_content">
-								<div class="sosul_ranking_img_thumbnail_wrap">
-									<div class="ranking_sosul_thumbnail">
-										<a href=""><img class = "rank_thumbnail"src="../img/resource.jpg"></a>
-										<span></span>
-									</div>
-									<a href=""><span class="sosul_rank_hidden">상세페이지 바로가기</span></a>
-								</div>
-							</div>
-
-							<div class="ranking_sosul_info_wrap">
-								<h class="ranking_sosul_tilte">
-									<a href=""><span class="sosul_rank_title_text">제목이라네</span></a>
-								</h>
-								<p class="ranking_sosul_writer"><a href="">작가임</a></p>
-								<p class="ranking_star_rate_wrap">
-									<span class="ranking_star_rate">
-										<div class="wrap-star">
-											<div class="star-rating">
-												<span style="width:90%"></span>
-											</div>
-											<div class="ranking_star_rate_pcount">777 
-												<span class="ranking_star_rate_pcount_unit">명</span>
-											</div>
-										</div>
-									</span>
-								</p>
-								<p><span class="ranking_count_num">총 99화</span></p>
-							</div>
-						</div>
-
-						<div class="sosul_rank_list_content">
-							<p class="sosul_rank">6</p>
-							<div class="sosul_rank_img_content">
-								<div class="sosul_ranking_img_thumbnail_wrap">
-									<div class="ranking_sosul_thumbnail">
-										<a href=""><img class = "rank_thumbnail"src="../img/resource.jpg"></a>
-										<span></span>
-									</div>
-									<a href=""><span class="sosul_rank_hidden">상세페이지 바로가기</span></a>
-								</div>
-							</div>
-
-							<div class="ranking_sosul_info_wrap">
-								<h class="ranking_sosul_tilte">
-									<a href=""><span class="sosul_rank_title_text">제목이라네</span></a>
-								</h>
-								<p class="ranking_sosul_writer"><a href="">작가임</a></p>
-								<p class="ranking_star_rate_wrap">
-									<span class="ranking_star_rate">
-										<div class="wrap-star">
-											<div class="star-rating">
-												<span style="width:40%"></span>
-											</div>
-											<div class="ranking_star_rate_pcount">777 
-												<span class="ranking_star_rate_pcount_unit">명</span>
-											</div>
-										</div>
-									</span>
-								</p>
-								<p><span class="ranking_count_num">총 99화</span></p>
-							</div>
-						</div>
-
-						<div class="sosul_rank_list_content">
-							<p class="sosul_rank">7</p>
-							<div class="sosul_rank_img_content">
-								<div class="sosul_ranking_img_thumbnail_wrap">
-									<div class="ranking_sosul_thumbnail">
-										<a href=""><img class = "rank_thumbnail"src="../img/resource.jpg"></a>
-										<span></span>
-									</div>
-									<a href=""><span class="sosul_rank_hidden">상세페이지 바로가기</span></a>
-								</div>
-							</div>
-
-							<div class="ranking_sosul_info_wrap">
-								<h class="ranking_sosul_tilte">
-									<a href=""><span class="sosul_rank_title_text">제목이라네</span></a>
-								</h>
-								<p class="ranking_sosul_writer"><a href="">작가임</a></p>
-								<p class="ranking_star_rate_wrap">
-									<span class="ranking_star_rate">
-										<div class="wrap-star">
-											<div class="star-rating">
-												<span style="width:60%"></span>
-											</div>
-											<div class="ranking_star_rate_pcount">777 
-												<span class="ranking_star_rate_pcount_unit">명</span>
-											</div>
-										</div>
-									</span>
-								</p>
-								<p><span class="ranking_count_num">총 99화</span></p>
-							</div>
-						</div>
-						
+						</c:forEach>
 
 						
-
+					
 						
 					
 					</div>
