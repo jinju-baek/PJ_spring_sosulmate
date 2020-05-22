@@ -13,7 +13,6 @@ import lombok.ToString;
 @AllArgsConstructor
 @Getter
 @Setter
-@Document(collection = "local.kakaopage")
 public class BookDTO {
     private int bno;
     private String type;

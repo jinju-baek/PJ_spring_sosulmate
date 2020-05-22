@@ -24,7 +24,8 @@ public class BookDAO {
 		Criteria cri = new Criteria(); 
 //		cri.where("type").is("판타지");
 		Query query = new Query(cri);
-		List<BookDTO> list = mongoOper.find(query, BookDTO.class,"local.kakaopage");
+		query.limit(20);
+		List<BookDTO> list = mongoOper.find(query, BookDTO.class,"book"); // 컬렉션 명
 		for(BookDTO one:list) {
 			log.info(one.toString());
 		}

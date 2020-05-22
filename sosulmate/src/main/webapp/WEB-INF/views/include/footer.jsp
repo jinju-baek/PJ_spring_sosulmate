@@ -61,7 +61,7 @@
 		}
 		.header_footer_div a img {
 			width: 440px;
-			margin: -130px -75px;
+			margin: -95px -60px;
 		}
 	</style>
 </head>
