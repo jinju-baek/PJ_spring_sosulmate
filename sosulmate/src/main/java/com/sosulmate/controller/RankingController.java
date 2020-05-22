@@ -10,7 +10,8 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @RequestMapping("/ranking")
 public class RankingController {
-	@GetMapping("/home")
+	
+	@GetMapping("/rankingHome")
 	public String viewRanking() {
 		return "/ranking/rankingHome";
 	}

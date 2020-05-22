@@ -189,67 +189,17 @@ label:hover {
 		}
 		
 	
-		/*상단바*/
-		.sosul_booklist_view_wrap{
-		width : 100%;
-		margin : 0 auto;
-		}
+/*상단바*/
+.sosul_booklist_view_wrap{
+width : 100%;
+margin : 0 auto;
+}
 		
 .ranking_menu_wrap{
-	width: 100%;
+width: 100%;
 }
 
-.ranking_menu_genre_wrap{
-	position: relative;
-	height: 52px;
 
-	border-bottom : 1px solid #656464;
-	display: flex;
-	line-height: 48px;
-}
-
-.ranking_menu_plat_contain{
-	width: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
-	text-align: center;
-}
-.ranking_menu_plat_contain > ul {
-	list-style: none;
-	padding : 0;
-	margin : 0;
-	position: relative;
-}
-.ranking_menu_plat_contain > ul > li {
-	position: relative;
-	border : 0;
-	display: inline-block;
-	float: none;
-	padding: 0 2px;
-	transition: all .3s ease;
-
-
-}
-.ranking_menu_plat_contain > ul > li > a {
-	border-radius: 50px;
-	position: relative;
-	padding : 6px 16px;
-	font-size: 13px;
-	line-height: 12px;
-	color: #565656;
-	font-weight: 500;
-	border : 2px solid transparent;
-
-}
-
-.ranking_menu_plat_contain > ul > li:hover>a {
-	border-width: 2px;
-	border-style: solid;
-	border-color : #E50020;
-	color : #E50020;
-}
 
 		/*로맨스리스트============================================================*/
 
