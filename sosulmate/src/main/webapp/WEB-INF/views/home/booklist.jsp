@@ -215,6 +215,7 @@ box-shadow: 0 0 1px 1px rgba(20,23,28,.1),0 3px 1px 0 rgba(20,23,28,.1);
 width: 100%;
 padding-right: 15px;
 padding-left: 15px;
+margin-top : 5px;
 margin-right: auto;
 margin-left: auto;
 text-align: center;
@@ -240,7 +241,7 @@ transition: all .3s ease;
 border-radius: 50px;
 position: relative;
 padding : 6px 16px;
-font-size: 13px;
+font-size: 16px;
 line-height: 12px;
 color: #565656;
 font-weight: 500;
@@ -371,7 +372,7 @@ display: block;
 text-align: center;
 display: block;
 width: 100%;
-height: auto;
+height: 286px;
 position: relative;
 overflow: hidden;
 }
@@ -927,25 +928,26 @@ text-align: center;
 									<div class="booklist_bar">
 										<h3 style="margin-bottom: 15px;"></h3>
 									</div>
-					
+									
+									<c:forEach items="${bookList}" var="one">
 									<div class="booklist_one">
 										<div class="booklist_product">
 											<div class="booklist_img">
 												<a href="#">
-													<img src="${path}/resources/img/로맨스1.jpg" class="booklist_imgclass">
+													<img src="${one.thumbnail}" class="booklist_imgclass">
 												</a>
 											</div>
 											<div class="booklist_contents">
 												<div class="booklist_pp">
 													<div class="booklist_product_category">
-														<a href="#">로맨스</a>
+														<a href="#">${one.type}</a>
 													</div>
 													<div class="booklist_product_author">
-														<a href="#">밀차</a>
+														<a href="#">${one.writer}</a>
 													</div>
 												</div>
 												<div class="booklist_product_title">
-													<h3><a href="#">그녀가 공작저로 가야 했던 사정</a></h3>
+													<h3><a href="#">${one.title}</a></h3>
 												</div>
 												
 											<div class="booklist_average_star">
@@ -963,488 +965,8 @@ text-align: center;
 										</div>
 									</div>
 								</div>
-
-								<div class="booklist_one">
-										<div class="booklist_product">
-											<div class="booklist_img">
-												<a href="#">
-													<img src="${path}/resources/img/로맨스2.jpg" class="booklist_imgclass">
-												</a>
-											</div>
-											<div class="booklist_contents">
-												<div class="booklist_pp">
-													<div class="booklist_product_category">
-														<a href="#">로맨스</a>
-													</div>
-													<div class="booklist_product_author">
-														<a href="#">차서진</a>
-													</div>
-												</div>
-													<div class="booklist_product_title">
-														<h3><a href="#">리셋팅 레이디</a></h3>
-													</div>
-												
-												
-											<div class="booklist_average_star">
-												<div class="booklist_basic_star">
-													<img src="https://books.ridicdn.net/_next/static/images/NoStarRating-c478df104f4861a50a39308a1d889466.svg" class="booklist_star">
-													<div class="booklist_yellow_star" style="width: 43px;">
-														<img src="https://books.ridicdn.net/_next/static/images/StarRating-92a4a66c7699e6a0ccaa5ef7aa3c3529.svg" class="booklist_star">
-													</div>
-													<div class="booklist_number">
-														<span class="booklist_average_list">4.18</span>
-														<div class="booklist_product_reviews">(30)</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="booklist_one">
-										<div class="booklist_product">
-											<div class="booklist_img">
-												<a href="#">
-													<img src="${path}/resources/img/로맨스3.jpg" class="booklist_imgclass">
-												</a>
-											</div>
-											<div class="booklist_contents">
-												<div class="booklist_pp">
-													<div class="booklist_product_category">
-														<a href="#">로맨스</a>
-													</div>
-													<div class="booklist_product_author">
-														<a href="#">유한려</a>
-													</div>
-												</div>
-													<div class="booklist_product_title">
-														<h3><a href="#">인소의 법칙</a></h3>
-													</div>
-												
-												
-											<div class="booklist_average_star">
-												<div class="booklist_basic_star">
-													<img src="https://books.ridicdn.net/_next/static/images/NoStarRating-c478df104f4861a50a39308a1d889466.svg" class="booklist_star">
-													<div class="booklist_yellow_star" style="width: 43px;">
-														<img src="https://books.ridicdn.net/_next/static/images/StarRating-92a4a66c7699e6a0ccaa5ef7aa3c3529.svg" class="booklist_star">
-													</div>
-													<div class="booklist_number">
-														<span class="booklist_average_list">3.23</span>
-														<div class="booklist_product_reviews">(11)</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="booklist_one">
-										<div class="booklist_product">
-											<div class="booklist_img">
-												<a href="#">
-													<img src="${path}/resources/img/로맨스4.jpg" class="booklist_imgclass">
-												</a>
-											</div>
-											<div class="booklist_contents">
-												<div class="booklist_pp">
-													<div class="booklist_product_category">
-														<a href="#">로맨스</a>
-													</div>
-													<div class="booklist_product_author">
-														<a href="#">강달콩</a>
-													</div>
-												</div>
-													<div class="booklist_product_title">
-														<h3><a href="#">결혼하고 합시다</a></h3>
-													</div>
-											
-												
-											<div class="booklist_average_star">
-												<div class="booklist_basic_star">
-													<img src="https://books.ridicdn.net/_next/static/images/NoStarRating-c478df104f4861a50a39308a1d889466.svg" class="booklist_star">
-													<div class="booklist_yellow_star" style="width: 43px;">
-														<img src="https://books.ridicdn.net/_next/static/images/StarRating-92a4a66c7699e6a0ccaa5ef7aa3c3529.svg" class="booklist_star">
-													</div>
-													<div class="booklist_number">
-														<span class="booklist_average_list">4.12</span>
-														<div class="booklist_product_reviews">(8)</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="booklist_one">
-										<div class="booklist_product">
-											<div class="booklist_img">
-												<a href="#">
-													<img src="${path}/resources/img/로맨스5.jpg" class="booklist_imgclass">
-												</a>
-											</div>
-											<div class="booklist_contents">
-												<div class="booklist_pp">
-													<div class="booklist_product_category">
-														<a href="#">로맨스</a>
-													</div>
-													<div class="booklist_product_author">
-														<a href="#">달슬</a>
-													</div>
-												</div>
-													<div class="booklist_product_title">
-														<h3><a href="#">흑막 용을 키우게 되었다</a></h3>
-													</div>
-											
-												
-											<div class="booklist_average_star">
-												<div class="booklist_basic_star">
-													<img src="https://books.ridicdn.net/_next/static/images/NoStarRating-c478df104f4861a50a39308a1d889466.svg" class="booklist_star">
-													<div class="booklist_yellow_star" style="width: 43px;">
-														<img src="https://books.ridicdn.net/_next/static/images/StarRating-92a4a66c7699e6a0ccaa5ef7aa3c3529.svg" class="booklist_star">
-													</div>
-													<div class="booklist_number">
-														<span class="booklist_average_list">3.38</span>
-														<div class="booklist_product_reviews">(8)</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-
-								<div class="booklist_one">
-										<div class="booklist_product">
-											<div class="booklist_img">
-												<a href="#">
-													<img src="${path}/resources/img/로맨스6.jpg" class="booklist_imgclass">
-												</a>
-											</div>
-											<div class="booklist_contents">
-												<div class="booklist_pp">
-													<div class="booklist_product_category">
-														<a href="#">로맨스</a>
-													</div>
-													<div class="booklist_product_author">
-														<a href="#">김미유</a>
-													</div>
-												</div>
-													<div class="booklist_product_title">
-														<h3><a href="#">그림자 없는 밤</a></h3>
-													</div>
-
-												
-											<div class="booklist_average_star">
-												<div class="booklist_basic_star">
-													<img src="https://books.ridicdn.net/_next/static/images/NoStarRating-c478df104f4861a50a39308a1d889466.svg" class="booklist_star">
-													<div class="booklist_yellow_star" style="width: 43px;">
-														<img src="https://books.ridicdn.net/_next/static/images/StarRating-92a4a66c7699e6a0ccaa5ef7aa3c3529.svg" class="booklist_star">
-													</div>
-													<div class="booklist_number">
-														<span class="booklist_average_list">2.96</span>
-														<div class="booklist_product_reviews">(167)</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-
-								<div class="booklist_one">
-										<div class="booklist_product">
-											<div class="booklist_img">
-												<a href="#">
-													<img src="${path}/resources/img/로맨스1.jpg" class="booklist_imgclass">
-												</a>
-											</div>
-											<div class="booklist_contents">
-												<div class="booklist_pp">
-													<div class="booklist_product_category">
-														<a href="#">로맨스</a>
-													</div>
-													<div class="booklist_product_author">
-														<a href="#">밀차</a>
-													</div>
-												</div>
-												<div class="booklist_product_title">
-													<h3><a href="#">그녀가 공작저로 가야 했던 사정</a></h3>
-												</div>
-												
-											<div class="booklist_average_star">
-												<div class="booklist_basic_star">
-													<img src="https://books.ridicdn.net/_next/static/images/NoStarRating-c478df104f4861a50a39308a1d889466.svg" class="booklist_star">
-													<div class="booklist_yellow_star" style="width: 43px;">
-														<img src="https://books.ridicdn.net/_next/static/images/StarRating-92a4a66c7699e6a0ccaa5ef7aa3c3529.svg" class="booklist_star">
-													</div>
-													<div class="booklist_number">
-														<span class="booklist_average_list">4.06</span>
-														<div class="booklist_product_reviews">(39)</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="booklist_one">
-										<div class="booklist_product">
-											<div class="booklist_img">
-												<a href="#">
-													<img src="${path}/resources/img/로맨스2.jpg" class="booklist_imgclass">
-												</a>
-											</div>
-											<div class="booklist_contents">
-												<div class="booklist_pp">
-													<div class="booklist_product_category">
-														<a href="#">로맨스</a>
-													</div>
-													<div class="booklist_product_author">
-														<a href="#">차서진</a>
-													</div>
-												</div>
-													<div class="booklist_product_title">
-														<h3><a href="#">리셋팅 레이디</a></h3>
-													</div>
-												
-												
-											<div class="booklist_average_star">
-												<div class="booklist_basic_star">
-													<img src="https://books.ridicdn.net/_next/static/images/NoStarRating-c478df104f4861a50a39308a1d889466.svg" class="booklist_star">
-													<div class="booklist_yellow_star" style="width: 43px;">
-														<img src="https://books.ridicdn.net/_next/static/images/StarRating-92a4a66c7699e6a0ccaa5ef7aa3c3529.svg" class="booklist_star">
-													</div>
-													<div class="booklist_number">
-														<span class="booklist_average_list">4.18</span>
-														<div class="booklist_product_reviews">(30)</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="booklist_one">
-										<div class="booklist_product">
-											<div class="booklist_img">
-												<a href="#">
-													<img src="${path}/resources/img/로맨스3.jpg" class="booklist_imgclass">
-												</a>
-											</div>
-											<div class="booklist_contents">
-												<div class="booklist_pp">
-													<div class="booklist_product_category">
-														<a href="#">로맨스</a>
-													</div>
-													<div class="booklist_product_author">
-														<a href="#">유한려</a>
-													</div>
-												</div>
-													<div class="booklist_product_title">
-														<h3><a href="#">인소의 법칙</a></h3>
-													</div>
-												
-												
-											<div class="booklist_average_star">
-												<div class="booklist_basic_star">
-													<img src="https://books.ridicdn.net/_next/static/images/NoStarRating-c478df104f4861a50a39308a1d889466.svg" class="booklist_star">
-													<div class="booklist_yellow_star" style="width: 43px;">
-														<img src="https://books.ridicdn.net/_next/static/images/StarRating-92a4a66c7699e6a0ccaa5ef7aa3c3529.svg" class="booklist_star">
-													</div>
-													<div class="booklist_number">
-														<span class="booklist_average_list">3.23</span>
-														<div class="booklist_product_reviews">(11)</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="booklist_one">
-										<div class="booklist_product">
-											<div class="booklist_img">
-												<a href="#">
-													<img src="${path}/resources/img/로맨스4.jpg" class="booklist_imgclass">
-												</a>
-											</div>
-											<div class="booklist_contents">
-												<div class="booklist_pp">
-													<div class="booklist_product_category">
-														<a href="#">로맨스</a>
-													</div>
-													<div class="booklist_product_author">
-														<a href="#">강달콩</a>
-													</div>
-												</div>
-													<div class="booklist_product_title">
-														<h3><a href="#">결혼하고 합시다</a></h3>
-													</div>
-											
-												
-											<div class="booklist_average_star">
-												<div class="booklist_basic_star">
-													<img src="https://books.ridicdn.net/_next/static/images/NoStarRating-c478df104f4861a50a39308a1d889466.svg" class="booklist_star">
-													<div class="booklist_yellow_star" style="width: 43px;">
-														<img src="https://books.ridicdn.net/_next/static/images/StarRating-92a4a66c7699e6a0ccaa5ef7aa3c3529.svg" class="booklist_star">
-													</div>
-													<div class="booklist_number">
-														<span class="booklist_average_list">4.12</span>
-														<div class="booklist_product_reviews">(8)</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="booklist_one">
-										<div class="booklist_product">
-											<div class="booklist_img">
-												<a href="#">
-													<img src="${path}/resources/img/로맨스1.jpg" class="booklist_imgclass">
-												</a>
-											</div>
-											<div class="booklist_contents">
-												<div class="booklist_pp">
-													<div class="booklist_product_category">
-														<a href="#">로맨스</a>
-													</div>
-													<div class="booklist_product_author">
-														<a href="#">밀차</a>
-													</div>
-												</div>
-												<div class="booklist_product_title">
-													<h3><a href="#">그녀가 공작저로 가야 했던 사정</a></h3>
-												</div>
-												
-											<div class="booklist_average_star">
-												<div class="booklist_basic_star">
-													<img src="https://books.ridicdn.net/_next/static/images/NoStarRating-c478df104f4861a50a39308a1d889466.svg" class="booklist_star">
-													<div class="booklist_yellow_star" style="width: 43px;">
-														<img src="https://books.ridicdn.net/_next/static/images/StarRating-92a4a66c7699e6a0ccaa5ef7aa3c3529.svg" class="booklist_star">
-													</div>
-													<div class="booklist_number">
-														<span class="booklist_average_list">4.06</span>
-														<div class="booklist_product_reviews">(39)</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="booklist_one">
-										<div class="booklist_product">
-											<div class="booklist_img">
-												<a href="#">
-													<img src="${path}/resources/img/로맨스2.jpg" class="booklist_imgclass">
-												</a>
-											</div>
-											<div class="booklist_contents">
-												<div class="booklist_pp">
-													<div class="booklist_product_category">
-														<a href="#">로맨스</a>
-													</div>
-													<div class="booklist_product_author">
-														<a href="#">차서진</a>
-													</div>
-												</div>
-													<div class="booklist_product_title">
-														<h3><a href="#">리셋팅 레이디</a></h3>
-													</div>
-												
-												
-											<div class="booklist_average_star">
-												<div class="booklist_basic_star">
-													<img src="https://books.ridicdn.net/_next/static/images/NoStarRating-c478df104f4861a50a39308a1d889466.svg" class="booklist_star">
-													<div class="booklist_yellow_star" style="width: 43px;">
-														<img src="https://books.ridicdn.net/_next/static/images/StarRating-92a4a66c7699e6a0ccaa5ef7aa3c3529.svg" class="booklist_star">
-													</div>
-													<div class="booklist_number">
-														<span class="booklist_average_list">4.18</span>
-														<div class="booklist_product_reviews">(30)</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="booklist_one">
-										<div class="booklist_product">
-											<div class="booklist_img">
-												<a href="#">
-													<img src="${path}/resources/img/로맨스3.jpg" class="booklist_imgclass">
-												</a>
-											</div>
-											<div class="booklist_contents">
-												<div class="booklist_pp">
-													<div class="booklist_product_category">
-														<a href="#">로맨스</a>
-													</div>
-													<div class="booklist_product_author">
-														<a href="#">유한려</a>
-													</div>
-												</div>
-													<div class="booklist_product_title">
-														<h3><a href="#">인소의 법칙</a></h3>
-													</div>
-												
-												
-											<div class="booklist_average_star">
-												<div class="booklist_basic_star">
-													<img src="https://books.ridicdn.net/_next/static/images/NoStarRating-c478df104f4861a50a39308a1d889466.svg" class="booklist_star">
-													<div class="booklist_yellow_star" style="width: 43px;">
-														<img src="https://books.ridicdn.net/_next/static/images/StarRating-92a4a66c7699e6a0ccaa5ef7aa3c3529.svg" class="booklist_star">
-													</div>
-													<div class="booklist_number">
-														<span class="booklist_average_list">3.23</span>
-														<div class="booklist_product_reviews">(11)</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="booklist_one">
-										<div class="booklist_product">
-											<div class="booklist_img">
-												<a href="#">
-													<img src="${path}/resources/img/로맨스4.jpg" class="booklist_imgclass">
-												</a>
-											</div>
-											<div class="booklist_contents">
-												<div class="booklist_pp">
-													<div class="booklist_product_category">
-														<a href="#">로맨스</a>
-													</div>
-													<div class="booklist_product_author">
-														<a href="#">강달콩</a>
-													</div>
-												</div>
-													<div class="booklist_product_title">
-														<h3><a href="#">결혼하고 합시다</a></h3>
-													</div>
-											
-												
-											<div class="booklist_average_star">
-												<div class="booklist_basic_star">
-													<img src="https://books.ridicdn.net/_next/static/images/NoStarRating-c478df104f4861a50a39308a1d889466.svg" class="booklist_star">
-													<div class="booklist_yellow_star" style="width: 43px;">
-														<img src="https://books.ridicdn.net/_next/static/images/StarRating-92a4a66c7699e6a0ccaa5ef7aa3c3529.svg" class="booklist_star">
-													</div>
-													<div class="booklist_number">
-														<span class="booklist_average_list">4.12</span>
-														<div class="booklist_product_reviews">(8)</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+								</c:forEach>
+						</div>
 							<a href="#" class="btn_main_booklist_more">더보기</a>
 						</div>
 					</div>
@@ -1457,13 +979,22 @@ text-align: center;
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript">
-	  $(function(){
-     	 $('.active a').click(function(){ 
-         $('.active a').css('color', '#2F3138')
-                            .css('border', '2px solid white');
-         $(this).css('color', '#E50020')
+	$(function(){
+    	$('.active a').click(function(){ 
+        $('.active a').css('color', '#2F3138')
+                      .css('border', '2px solid white');
+        $(this).css('color', '#E50020')
                .css('border', '2px solid #E50020');
-      });
-   });
+      	});
+   	});
+	  
+	$(function(){
+		$('.ranking_menu_plat_contain a').click(function(){
+			$('.ranking_menu_plat_contain a').css('color', '#2F3138')
+			 					   .css('border', '2px solid white');
+			$(this).css('color', '#E50020')
+				   .css('border', '2px solid #E50020');
+		});
+	});	
 </script>
 </html>
