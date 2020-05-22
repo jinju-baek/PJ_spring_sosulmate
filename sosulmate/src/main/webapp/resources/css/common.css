@@ -196,6 +196,7 @@ input.largeInput{
 	color: red;
 	font-size: 12px;
 	padding-left: 10px;
+	visibility: hidden;
 }
 
 /*검색창*/
