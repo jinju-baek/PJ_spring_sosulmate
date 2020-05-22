@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ include file="../include/include.jsp"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,6 +25,7 @@
 		.login_content {
 			width: 768px;
 			margin: 0 auto;
+			padding-top: 35px;
 		}
 		.header_login_div {
 			display: block;
@@ -39,7 +41,13 @@
 			background-color: white;
 			border: 1px solid #D1D5D9;
 			height: 45px;
-			margin-bottom: 1px;
+			padding : 10px 35px 10px 15px;
+		}
+		.div_login_input_pw {
+			background-color: white;
+			border: 1px solid #D1D5D9;
+			border-top: 1px solid white;
+			height: 45px;
 			padding : 10px 35px 10px 15px;
 		}
 		.login_box {
@@ -76,6 +84,7 @@
 		#header_login_div a img {
 			width: 550px;
 			margin: -180px;
+			padding-top: 40px;
 		}
 	</style>
 </head>
@@ -95,7 +104,7 @@
 								<input type="text" class="input_login" placeholder="아이디">
 							</span>
 						</div>
-						<div class="div_login_input" id="sosulmate_pw">
+						<div class="div_login_input_pw" id="sosulmate_pw">
 							<span class="login_box">
 								<input type="password" class="input_login" placeholder="비밀번호">
 							</span>

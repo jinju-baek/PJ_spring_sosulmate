@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ include file="../include/include.jsp"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -59,6 +60,12 @@
 			border: 1px solid #D1D5D9;
 			padding : 10px 10px 10px 10px;
 		}
+		.join_pwpw_confirm {
+			background-color: white;
+			border: 1px solid #D1D5D9;
+			border-top: 1px solid white;
+			padding : 10px 10px 10px 10px;
+		}
 		.join_pwbox {
 			padding-top: 15px;
 		}
@@ -98,7 +105,7 @@
 			<div class="join_content">
 				<header>
 					<div id="header_join_div" style="text-align: center;">
-						<a href="#"><img alt= "로고이미지" src="sosulmate_img/index 예시 이미지/로고.png"></a>
+						<a href="#"><img alt= "로고이미지" src="${path}/resources/img/로고.png"></a>
 					</div>
 					<div class="join_title">이메일로 회원가입</div>
 				</header>
@@ -131,7 +138,7 @@
 									</span>
 								</div>
 
-								<div class="join_pwpw">
+								<div class="join_pwpw_confirm">
 									<span class="join_box">
 										<input type="password" class="input_join" placeholder="비밀번호 재확인">
 									</span>

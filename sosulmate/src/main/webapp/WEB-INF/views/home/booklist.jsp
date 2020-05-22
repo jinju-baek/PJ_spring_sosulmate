@@ -130,7 +130,11 @@ border-right-width: 1px;
 
 .subCategory {
 padding: 6px 10px;
-padding-right: 22px; 
+display: flex;
+align-content: flex-start;
+flex-direction: column;
+flex-wrap: wrap;
+overflow: auto; 
 }
 
 .keywordList {
