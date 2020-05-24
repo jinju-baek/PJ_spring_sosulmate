@@ -11,8 +11,11 @@
 			color: inherit;
 			text-decoration: none;
 		}
-		header, section {
+		header {
 			padding : 40px 0px 2px;
+		}
+		section {
+			padding : 20px 0px 2px;
 		}
 		.join_wrap {
 			width: 100%;
@@ -32,6 +35,10 @@
 			width: 260px;
 			height: 130px;
 			margin: 0 auto;
+		}
+		.join_logo{
+			width: 250px;
+    		height: 70px;
 		}
 		.join_content_wrap {
 			width: 330px;
@@ -105,7 +112,8 @@
 			<div class="join_content">
 				<header>
 					<div id="header_join_div" style="text-align: center;">
-						<a href="#"><img alt= "로고이미지" src="${path}/resources/img/로고.png"></a>
+						<a href="#"><img class="join_logo" src="${path}/resources/img/로고.png"></a>
+						
 					</div>
 					<div class="join_title">이메일로 회원가입</div>
 				</header>

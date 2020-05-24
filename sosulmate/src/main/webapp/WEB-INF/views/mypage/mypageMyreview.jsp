@@ -79,7 +79,7 @@
 			display: flex;
 		}
 		.myreview_onepost_star{
-			background: url('${path}/resource/img/star.png') no-repeat;
+			background: url('${path}/resource/img/star-yellow.png') no-repeat;
 			background-size: contain;
 			width: 80px;
 			height: 18px;

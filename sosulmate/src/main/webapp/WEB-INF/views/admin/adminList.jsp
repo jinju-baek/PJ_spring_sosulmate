@@ -41,7 +41,7 @@
 	<div class="adminpage_list_wrap">
 		<div class="list_title">자유</div>
 		<form method="" action="">
-			<div class="mediumSearch">
+			<div class="smallSearch">
 				<i class="fas fa-search"></i>
 				<input type="text" name="" placeholder="검색">
 			</div>

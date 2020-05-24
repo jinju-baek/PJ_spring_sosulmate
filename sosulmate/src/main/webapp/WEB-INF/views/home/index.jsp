@@ -126,7 +126,6 @@
 			width: 1005px;
 			max-width: 1005px;
 			position: relative;
-			height: 100%;
 		}
 		.new_book_content {
 			width: 1168px;
@@ -220,7 +219,6 @@
 			width: 1005px;
 			max-width: 1005px;
 			position: relative;
-			height: 100%;
 		}
 		.recommend_book_content {
 			width: 1168px;

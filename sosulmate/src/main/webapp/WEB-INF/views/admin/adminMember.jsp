@@ -76,7 +76,7 @@
 		<div class="member_header_wrap">
 			<div class="member_search">
 				<form method="" action="">
-					<div class="mediumSearch">
+					<div class="smallSearch">
 						<i class="fas fa-search"></i>
 						<input type="text" name="" placeholder="검색">
 					</div>

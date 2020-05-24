@@ -15,8 +15,12 @@
 		body {
 			background-color : #F5F6F7;
 		}
-		header, section {
+		header {
 			padding : 62px 0px 20px;
+			text-align: center;
+		}
+		section {
+			padding : 20px 0px 20px;
 			text-align: center;
 		}
 		.login_wrap {
@@ -33,6 +37,10 @@
 			height: 130px;
 			margin: 0 auto;
 		}
+		.login_logo {
+			width: 250px;
+    		height: 70px;
+    	}
 		.login_content_wrap {
 			width: 330px;
 			margin: 0 auto;
@@ -94,7 +102,7 @@
 			<div class="login_content">
 				<header>
 					<div id="header_login_div">
-						<a href="#"><img alt= "로고이미지" src="${path}/resources/img/로고.png"></a>
+						<a href="#"><img class="login_logo" src="${path}/resources/img/로고.png"></a>
 					</div>
 				</header>
 				<section>

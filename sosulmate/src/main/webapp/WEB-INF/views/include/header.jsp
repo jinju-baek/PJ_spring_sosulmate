@@ -101,18 +101,18 @@
 		}
 		.bell_main {
     		padding-right: 17px;
-    		padding: 0 5px;
+    		padding: 5px;
     		border: 1px solid #3a3a3a;
     		border-radius: 32px;
-   			font-size: 20px;
+   			font-size: 17px;
    			margin-right: 17px;
 		}
 		.far {
 			color: #3a3a3a;
 		}
 		.header_content_logo_img {
-			width: 355px;
-			margin: -97px -142px;
+			width: 200px;
+    		height: 55px;
 		}
 
 /*		.help_search_input input {
@@ -142,7 +142,7 @@
 		<div class="header_content">
 			<div class="header_content_logo">
 				<a href="#">
-					<img class="header_content_logo_img" alt="로고이미지" src="${path}/resources/img/로고.png">	
+					<img class="header_content_logo_img" src="${path}/resources/img/로고.png">
 				</a>
 			</div>
 			<div class="header_content_wrap">

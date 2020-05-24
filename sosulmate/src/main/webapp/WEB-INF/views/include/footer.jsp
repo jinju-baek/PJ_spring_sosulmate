@@ -34,6 +34,10 @@
 		.header_footer_div {
 			position: absolute;
 		}
+		.footer_logo {
+			width: 250px;
+    		height: 75px;
+		}
 		.footer_two li {
 			margin-right: 14px;
 			display: inline-block;
@@ -69,7 +73,7 @@
 	<div class="footer_content_wrap">
 		<div class="footer_content">
 			<div class="header_footer_div">
-				<a href="#"><img alt="로고이미지" src="${path}/resources/img/로고.png"></a>
+				<a href="#"><img class="footer_logo" src="${path}/resources/img/로고.png"></a>
 			</div>
 			<div class="footer_right">
 				<ul class="footer_one">

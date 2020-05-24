@@ -18,6 +18,12 @@ public class HomeController {
 	@Autowired
 	BookService bService;
 	
+	@GetMapping("/")
+	public String index() {
+		log.info("▶▶▶▶▶▶▶▶▶▶ GET : Index page 출력 ◀◀◀◀◀◀◀◀◀◀");
+		return "home/index";
+	}
+	
 	@GetMapping("/booklist")
 	public String booklistview(Model model){
 		log.info("▶▶▶▶▶▶▶▶▶▶ GET  : Booklist page 출력 ◀◀◀◀◀◀◀◀◀◀");
