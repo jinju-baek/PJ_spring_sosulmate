@@ -63,6 +63,9 @@
 		li:not(.privacy) {
 			padding-top: 3px;
 		}
+		.footer_logo {
+			margin-top: -12px;
+		}
 	</style>
 </head>
 <body>
