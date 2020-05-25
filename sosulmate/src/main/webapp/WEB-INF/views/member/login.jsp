@@ -89,11 +89,6 @@
 		.btn_login {
 			margin: 30px 0 5px 0px;
 		}
-		#header_login_div a img {
-			width: 550px;
-			margin: -180px;
-			padding-top: 40px;
-		}
 	</style>
 </head>
 <body>

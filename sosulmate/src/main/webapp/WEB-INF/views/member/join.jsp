@@ -100,10 +100,6 @@
 			font-size: 10px;
 			text-align: right;
 		}
-		#header_join_div a img {
-			width: 550px;
-			margin : -110px;
-		}
 	</style>
 </head>
 <body>
@@ -173,9 +169,8 @@
 										<div><a href="#" class="sosulmate_constract">약관보기></a></div> 
 									</div>
 									
-									<div><span class="errorMessage">sosulmate 이용약관과 개인정보 수집 및 이용에 대한 안내 모두 동의해주세요.</span></div>
-									
 								</div>
+								<div><span class="errorMessage">sosulmate 이용약관과 개인정보 수집 및 이용에 대한 안내 모두 동의해주세요.</span></div>
 							</div>
 						
 							<div class="btn_double_area">	

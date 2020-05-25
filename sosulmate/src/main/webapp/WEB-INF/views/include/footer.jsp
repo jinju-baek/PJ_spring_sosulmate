@@ -63,10 +63,6 @@
 		li:not(.privacy) {
 			padding-top: 3px;
 		}
-		.header_footer_div a img {
-			width: 440px;
-			margin: -95px -60px;
-		}
 	</style>
 </head>
 <body>

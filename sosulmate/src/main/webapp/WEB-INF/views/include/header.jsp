@@ -110,10 +110,6 @@
 		.far {
 			color: #3a3a3a;
 		}
-		.header_content_logo_img {
-			width: 200px;
-    		height: 55px;
-		}
 
 /*		.help_search_input input {
 		    border: 1px solid #fff;
