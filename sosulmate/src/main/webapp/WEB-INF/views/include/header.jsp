@@ -32,6 +32,9 @@
 			align-items: center;
 
 		}
+		.header_content_logo_img{
+			width: 210px;
+		}
 		.header_content_wrap {
 			display: flex;
 			align-items: center;
