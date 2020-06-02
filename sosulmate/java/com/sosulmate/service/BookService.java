@@ -16,9 +16,13 @@ public class BookService {
 	@Autowired
 	BookDAO bDao;
 	
-	public List<BookDTO> selectBook() {
+	public List<BookDTO> selectBook(String platform) {
 		log.info("********************ranking 서비스단");
-		return bDao.selectBook();
+		return bDao.selectBook(platform);
+	}
+	public List<BookDTO> selectList(String type) {
+		log.info("********************BookList");
+		return bDao.selectList(type);
 	}
 
 }

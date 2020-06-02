@@ -296,8 +296,8 @@ a{
 <script type="text/javascript">
 	
 	$(function(){
-		var bno = ${one.bno}.indexOf()
-		bno = $('.sosulrank').val()
+
+		var bno = $('.sosulrank').val()
 		
 		$('.ranking_menu_plat_contain a').click(function(){
 			$('.ranking_menu_plat_contain a').css('color', '#2F3138')

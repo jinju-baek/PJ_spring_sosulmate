@@ -19,9 +19,9 @@ public class RankingController {
 	BookService bService;
 	
 	@GetMapping("/rankingHome")
-	public String viewRanking(Model model) {
+	public String viewRanking(Model model, String platform) {
 		log.info("********************rankingHome출력");
-		model.addAttribute("bookList",bService.selectBook());
+		model.addAttribute("bookList",bService.selectBook(platform));
 
 
 		return "/ranking/rankingHome";

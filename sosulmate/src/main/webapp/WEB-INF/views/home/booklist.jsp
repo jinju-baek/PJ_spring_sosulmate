@@ -377,6 +377,9 @@ position: relative;
 overflow: hidden;
 }
 
+.booklist_imgclass{
+height:275px;
+}
 .booklist_product_category {
 display: inline-block;
 }
