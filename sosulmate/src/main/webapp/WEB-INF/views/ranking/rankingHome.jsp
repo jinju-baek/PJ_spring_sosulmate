@@ -28,52 +28,6 @@ a{
 	display: flex;
 	line-height: 48px;
 }
-.ranking_menu_plat_contain{
-	width: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
-	text-align: center;
-}
-.ranking_menu_plat_contain > ul {
-	list-style: none;
-	padding : 0;
-	margin : 0;
-	position: relative;
-}
-.ranking_menu_plat_contain > ul > li {
-	position: relative;
-	border : 0;
-	display: inline-block;
-	float: none;
-	padding: 0 2px;
-	transition: all .3s ease;
-
-
-}
-.ranking_menu_plat_contain > ul > li > a {
-	border-radius: 50px;
-	position: relative;
-	padding : 6px 16px;
-	font-size: 13px;
-	line-height: 12px;
-	color: #565656;
-	font-weight: 500;
-	border : 2px solid transparent;
-
-}
-
-.ranking_menu_plat_contain > ul > li:hover>a {
-	border-width: 2px;
-	border-style: solid;
-	border-color : #E50020;
-	color : #E50020;
-
-}
-
-
-
 /*메뉴장르바*/
 .ranking_menu_genre_wrap{
 	position: relative;
@@ -231,7 +185,7 @@ a{
 	<div class="ranking_main_wrap">
 		<div class="ranking_menu_wrap">
 			<div class="ranking_menu_plat_wrap">
-				<div class="ranking_menu_plat_contain">
+				<div class="topmenu_contain">
 					<ul>
 						<li class="rank_menu_active">
 							<a href="#" >네이버시리즈</a>
@@ -290,7 +244,7 @@ a{
 					<div class="sosul_rank_list">
 						<c:forEach items="${bookList}" var="one">
 							<div class="sosul_rank_list_content">
-								<p class="sosul_rank">${one.bno}</p>
+								<p class="sosul_rank">${one.bno-3000000}</p>
 								<div class="sosul_rank_img_content">
 									<div class="sosul_ranking_img_thumbnail_wrap">
 										<div class="ranking_sosul_thumbnail">
@@ -336,28 +290,30 @@ a{
 
 
 	</div>
-
-</body>
 <%@ include file="../include/footer.jsp"%>
+</body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript">
 	
 	$(function(){
+		var bno = ${one.bno}.indexOf()
+		bno = $('.sosulrank').val()
+		
 		$('.ranking_menu_plat_contain a').click(function(){
 			$('.ranking_menu_plat_contain a').css('color', '#2F3138')
 											 .css('border', '2px solid white');
 			$(this).css('color', '#E50020')
 					.css('border', '2px solid #E50020');
 		});
-	});
-
-	$(function(){
 		$('.topmenu_contain a').click(function(){
 			$('.topmenu_contain a').css('color', '#2F3138')
  								   .css('border', '2px solid white');
 			$(this).css('color', '#E50020')
 				   .css('border', '2px solid #E50020');
 		});
+		
 	});
+
+
 </script>
 </html>
