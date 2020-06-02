@@ -25,9 +25,9 @@ public class HomeController {
 	}
 	
 	@GetMapping("/booklist")
-	public String booklistview(Model model, String platform){
+	public String booklistview(Model model, String type){
 		log.info("▶▶▶▶▶▶▶▶▶▶ GET  : Booklist page 출력 ◀◀◀◀◀◀◀◀◀◀");
-		model.addAttribute("bookList", bService.selectBook(platform));
+		model.addAttribute("bookList", bService.selectList(type));
 		return "/home/booklist";
 		
 	}
