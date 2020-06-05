@@ -22,9 +22,9 @@ public class BookDAO {
 	public List<BookDTO> selectBook(String platform) {
 		log.info("********************BookDAO_selectBook !!");
 		Criteria cri = new Criteria(); 
-		cri.orOperator(Criteria.where("platform").is(platform));
+		cri.orOperator(Criteria.where("platform").is("kakaopage"));
 		Query query = new Query(cri);
-		query.limit(500);
+		query.limit(20);
 		List<BookDTO> list = mongoOper.find(query, BookDTO.class,"book"); // 컬렉션 명
 		for(BookDTO one:list) {
 			log.info(one.toString());
@@ -35,7 +35,7 @@ public class BookDAO {
 	public List<BookDTO> selectList(String type) {
 		log.info("********************BookDAO_BookList !!");
 		Criteria cri = new Criteria(); 
-		cri.orOperator(Criteria.where("type").is(type));
+		cri.orOperator(Criteria.where("platform").is("naver"));
 		Query query = new Query(cri);
 		query.limit(50);
 		List<BookDTO> list = mongoOper.find(query, BookDTO.class,"book"); // 컬렉션 명

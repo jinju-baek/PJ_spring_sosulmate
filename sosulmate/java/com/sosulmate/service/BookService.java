@@ -22,6 +22,7 @@ public class BookService {
 	}
 	public List<BookDTO> selectList(String type) {
 		log.info("********************BookList");
+		type = "로맨스";
 		return bDao.selectList(type);
 	}
 
